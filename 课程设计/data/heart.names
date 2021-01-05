@@ -1,0 +1,53 @@
+This database contains 13 attributes (which have been extracted from a larger set of 75)       
+Attribute Information:
+------------------------
+      -- 1. age       
+      -- 2. sex       
+      -- 3. chest pain type  (4 values)       
+      -- 4. resting blood pressure  
+      -- 5. serum cholestoral in mg/dl      
+      -- 6. fasting blood sugar > 120 mg/dl       
+      -- 7. resting electrocardiographic results  (values 0,1,2) 
+      -- 8. maximum heart rate achieved  
+      -- 9. exercise induced angina    
+      -- 10. oldpeak = ST depression induced by exercise relative to rest   
+      -- 11. the slope of the peak exercise ST segment     
+      -- 12. number of major vessels (0-3) colored by flourosopy        
+      -- 13.  thal: 3 = normal; 6 = fixed defect; 7 = reversable defect     
+
+连续值：1 4 5 8 10 12
+离散值：2 3 6 7 9 11 13
+
+Attributes types
+-----------------
+Real: 1,4,5,8,10,12实数
+Ordered:11,
+Binary: 2,6,9
+Nominal:7,3,13
+Variable to be predicted
+------------------------
+Absence (1) or presence (2) of heart disease
+Cost Matrix
+	 abse  pres
+absence	  0	1
+presence  5	0
+where the rows represent the true values and the columns the predicted.
+No missing values.
+270 observations
+数据介绍
+该数据库包含76个属性，但是所有已发布的实验都引用了其中14个属性的子集。特别是，Cleveland数据库是 迄今为止ML研究人员使用的唯一数据库。“目标”字段是指患者中存在心脏病。预测是否有心脏病：1代表没有 2代表有
+属性信息：
+1. 年龄
+2. 性别
+3. 胸痛类型（4个值）
+4. 静息血压
+5. 血清胆汁，mg / dl
+6. 空腹血糖> 120 mg / dl
+7. 静息心电图结果（值0,1,2）
+8. 达到最大心率
+9. 运动性心绞痛
+10. oldpeak =运动引起的相对于休息的ST抑郁
+11. 最高运动ST段的斜率
+12. 萤光显色的主要血管数目（0-3）
+13. thal：3 =正常；6 =固定缺陷；7 =可逆缺陷
+最近从数据库中删除了患者的姓名和社会保险号，并替换为虚拟值。已“处理”了一个文件，该文件包含Cleveland数据库。所有四个未处理的文件也都存在于此目录中。
